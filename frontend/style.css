@@ -1,0 +1,123 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 62, 93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-family: sans-serif;
+}
+
+#box {
+    margin-top: 10%;
+}
+h1 {
+    text-align: center;
+}
+ 
+#box1 {
+    width: 570px;
+    height: 100vh;
+}
+
+#box2 {
+    width: 550px;
+    height: 70px;
+    margin: 0 auto;
+    font-size: 20px;
+    border: 1px solid;
+    background-color: rgb(146, 47, 239);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#box2_1 {
+    width: 550px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#box3 {
+    width: 550px;
+    margin: 0 auto;
+}
+
+#box4 {
+    width: 550px;
+    margin: 0 auto;
+}
+
+input {
+    width: 400px;
+    height: 60px;
+    background-color: rgb(146, 47, 239);
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: azure;
+}
+
+input::placeholder {
+    color: azure;
+    font-size: 20px;
+}
+
+button {
+    width: 100px;
+    height: 60px;
+}
+
+p {
+    width: 550px;
+    height: 70px;
+    border: 1px solid;
+    background-color: rgb(146, 47, 239);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #box4 p {
+    animation: fadeIn 0.3s ease;
+  }
+
+  #del {
+    transition: transform 0.3s;
+  }
+  
+  #del:hover {
+    transform: scale(1.1);
+  }
+
+  #add {
+    transition: transform 0.3s;
+  }
+
+  #add:hover {
+    transform: scale(1.1);
+  }
+
+  #add:active {
+    transform: scale(0.95);
+  }
+ 
